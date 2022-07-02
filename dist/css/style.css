@@ -245,6 +245,70 @@
   border-radius: 50%;
 }
 
+.continue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  height: 100vh;
+}
+
+.continue__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.continue .close {
+  top: 30px !important;
+}
+
+.continue__content {
+  max-width: 527px;
+  width: 100%;
+}
+
+.continue__p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.continue__p.last {
+  margin-bottom: 30px;
+}
+
+.continue__btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 404px;
+  height: 64px;
+}
+
+.continue__img img {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -379,6 +443,16 @@ button {
   }
 }
 
+@media (max-width: 1800px) {
+  .continue__p {
+    font-size: 18px;
+  }
+
+  .continue__img {
+    width: 700px;
+  }
+}
+
 @media (max-width: 1200px) {
   .start {
     height: -webkit-max-content;
@@ -410,6 +484,40 @@ button {
   .close img {
     width: 10px;
     height: 10px;
+  }
+
+  .continue {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding-top: 20px;
+  }
+
+  .continue__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 20px;
+  }
+
+  .continue .close {
+    top: 23px !important;
+    right: 15px;
+  }
+
+  .continue__p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+
+  .continue__img {
+    width: 100%;
   }
 }
 
@@ -450,6 +558,11 @@ button {
     right: 15px;
   }
 
+  .continue__btn {
+    width: 320px;
+    height: 50px;
+  }
+
   .btn {
     font-weight: 700;
     font-size: 22px;
@@ -459,6 +572,10 @@ button {
 
 @media (max-width: 375px) {
   .start__btn {
+    width: 100%;
+  }
+
+  .continue__btn {
     width: 100%;
   }
 
