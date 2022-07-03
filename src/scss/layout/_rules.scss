@@ -1,0 +1,189 @@
+.rules{
+    padding-top: 30px;
+    padding-bottom: 56px;
+    position: relative;
+    height: 100vh;
+    @include media(1200){
+        height: max-content;
+    }
+    .close{
+        top: 30px;
+    }
+    &__body{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @include media(1200){
+            justify-content: center;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 150px;
+        @include media(1600){
+            column-gap: 70px;
+        }
+        @include media(1200){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__content{
+        max-width: 808px;
+        width: 100%;
+        @include media(1200){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    &__title{
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 130%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    &__p{
+        width: 100%;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 130%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        @include media(1600){
+            font-size: 20px;
+        }
+        @include media(768){
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            text-align: center;
+            color: #000000;
+        }
+        @include media(375){
+            max-width: 300px;
+            width: 100%;
+        }
+        &.second{
+            margin-bottom: 100px;
+            @include media(1600){
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__btn{
+        margin-left: auto;
+        margin-right: auto;
+        width: 404px;
+        height: 64px;
+    }
+    &__right{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        @include media(1200){
+            padding-right: 15px;
+        }
+    }
+    &__wrapper{
+        padding-bottom: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 115px;
+        @include media(1200){
+            padding-left: 15px;
+        }
+        @include media(768){
+            padding-bottom: 40px;
+            row-gap: 82px;
+        }
+    }
+    &__cloud{
+        width: 325px;
+        height: 278px;
+        background: url(../img/rules-cloud.png) center / contain no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media(768){
+            width: 185px;
+            height: 160px;
+        }
+    }
+    &__text{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+        max-width: 230px;
+        width: 100%;
+        @include media(768){
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 130%;
+            max-width: 158px;
+        }
+    }
+    &__btns{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        row-gap: 10px;
+        max-width: 267px;
+        width: 100%;
+        @include media(768){
+            row-gap: 5px;
+        }
+    }
+    &__button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        height: 42px;
+        box-shadow: -4px -8px 10px rgba(0, 0, 0, 0.2), 4px 8px 10px rgba(0, 0, 0, 0.34);
+        border-start-start-radius: 100px;
+        border-end-end-radius: 100px;
+        border: 3px solid #fff;
+        @include media(768){
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 130%;
+            width: 190px;
+            height: 32px;
+        }
+        &.btn-green{
+            background: #10843D;
+        }
+        &.btn-red{
+            background: #CB1818
+        }
+    }
+    &__img{
+        @include media(375){
+            width: 140px;
+        }
+        img{
+            @include media(375){
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            .main 
+                .rules.container 
+                    .rules__body
+                        button(type="button").close
+                            img(src="@img/close.svg", alt="" draggable="false" loading="lazy")
+                        .rules__row 
+                            .rules__content 
+                                p.rules__title Правила игры
+                                p.rules__p Посмотри на аргументы, догадки каждой кошки и определи, какие из них относятся к собственной зоне ответственности и к внутреннему локусу контроля, а какие к внешним обстоятельствам и внешнему локусу
+                                p.rules__p.second Под каждым из трёх аргументов, каждой из трёх догадок есть кнопка «Внутренний локус» и «Внешний локус». Если ты считаешь, что эта кошка всё валит на внешние силы — нажми #[span «ВНЕШНИЙ ЛОКУС»], если думаешь, что эта кошка понимает, что есть то, за что ты отвечаешь сам — нажми #[span «ВНУТРЕННИЙ ЛОКУС»]. Определив, к какому локусу относится каждый аргумент, каждая фраза — нажми «Готово» и узнаешь правильный ответ.
+                                button(type="button").rules__btn.btn.btn-orange.disable-xl начать игру
+                            .rules__right 
+                                .rules__wrapper 
+                                    .rules__cloud 
+                                        p.rules__text.disable-md Ну что, разберемся, какой у кого локус-покус?
+                                        p.rules__text.enable-md «Локус нужно держать внутри» - известная кошачья мудрость! 
+                                    .rules__btns 
+                                        button(type="button").rules__button.btn-green Внутренний локус
+                                        button(type="button").rules__button.btn-red Внешний локус
+                                .rules__img 
+                                    img(src="@img/rules-img.png", alt="" draggable="false" loading="lazy").disable-md
+                                    img(src="@img/rules-img-md.png", alt="" draggable="false" loading="lazy").enable-md
+        script(src="js/app.min.js")
