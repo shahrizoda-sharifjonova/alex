@@ -1,0 +1,99 @@
+.offer{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    height: 100vh;
+    @include media(1700){
+        height: max-content;
+    }
+    .close{
+        top: 30px;
+    }
+    &__body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        @include media(1700){
+            height: max-content;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 95px;
+        @include media(1700){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &.second{
+            @include media(1700){
+                margin-top: 10px;
+            }
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 130%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: #000000;  
+        max-width: 524px;
+        min-width: 524px;
+        width: 100%;     
+        margin-bottom: 30px; 
+    }
+    &__btn{
+        width: 404px;
+        height: 64px;
+        font-weight: 700;
+        font-size: 20px !important;
+        line-height: 130% !important;
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+        &.second{
+            font-weight: 700;
+            font-size: 26px !important;
+            line-height: 130% !important;
+            margin-bottom: 40px;
+        }
+    }
+    &__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 555px;
+        width: 100%;
+        padding: 20px;
+        background: #C8C8C8;
+        border-radius: 10px;
+        p{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}

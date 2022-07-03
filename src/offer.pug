@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            .main 
+                .offer.container
+                    .offer__body 
+                        button(type="button").close
+                            img(src="@img/close.svg", alt="" draggable="false" loading="lazy")
+                        .offer__row
+                            .offer__col 
+                                p.offer__title Результат: 10 из 15
+                                p.offer__p Ты, конечно, справился лучше, чем наши кошки, но есть еще куда стремиться. Может, поиграем еще раз? Кошки, если что, за! А то не усвоив урок, вряд ли они смогут открыть свои курсы, а ведь так хочется. Напоминала: Внешний локус контроля – это привычка перекладывать ответственность на внешние обстоятельства (меня отвлекли, обманули, обхитрили).  А внутренний – брать ответственность на себя (кажется, где-то я сам просчитался).
+                                button(type="button").offer__btn.btn.btn-orange поиграть с кошками еще раз
+                            .offer__img 
+                                img(src="@img/offer-img.png", alt="" draggable="false" loading="lazy")
+                            .offer__col.second 
+                                p.offer__title Предложение:
+                                p.offer__p Нажав кнопку ниже, вы можете прокомментировать эту игру или пофантазировать: как еще мог выглядеть разговор с непониманием? Если у вас есть идея такого диалога, отправьте его нам! Возможно, мы добавим в эту игру новые комиксы на ваших примерах (если хотите, напишите свое имя и мейл).
+                                button(type="button").offer__btn.second.btn.btn-orange комментировать
+                                .offer__info 
+                                    p.offer__info-p Задачка на подумать – а какой локус контроля у тебя, внутренний (я сам влияю на ситуацию) или внешний (это всё обстоятельства виноваты)?
+        script(src="js/app.min.js")
