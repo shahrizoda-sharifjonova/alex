@@ -603,9 +603,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
 
@@ -1122,9 +1126,9 @@ button {
   }
 
   .rules__body {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .rules__row {
@@ -1149,12 +1153,20 @@ button {
         -ms-flex-align: center;
             align-items: center;
     row-gap: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+  }
+
+  .rules__p {
+    margin-bottom: 0;
+  }
+
+  .rules__btn.enable-xl {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 
   .rules__right {
-    padding-right: 15px;
+    margin-bottom: 30px;
   }
 
   .rules__wrapper {
@@ -1267,12 +1279,35 @@ button {
     width: 100%;
   }
 
+  .rules {
+    padding-top: 23px;
+  }
+
+  .rules .close {
+    top: 23px;
+  }
+
+  .rules__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 0;
+  }
+
   .rules__p {
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
     text-align: center;
     color: #000000;
+  }
+
+  .rules__btn {
+    width: 320px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
   }
 
   .rules__wrapper {
@@ -1289,7 +1324,7 @@ button {
     font-weight: 700;
     font-size: 15px;
     line-height: 130%;
-    max-width: 158px;
+    max-width: 213px;
   }
 
   .rules__btns {
@@ -1426,6 +1461,10 @@ button {
     width: 100%;
   }
 
+  .rules__btn {
+    width: 100%;
+  }
+
   .rules__img {
     width: 140px;
   }
@@ -1440,6 +1479,27 @@ button {
 
   .btn::after {
     right: 50px;
+  }
+}
+
+@media (max-width: 359px) {
+  .rules__wrapper {
+    max-width: 175px;
+    row-gap: 50px;
+  }
+
+  .rules__cloud {
+    width: 100%;
+  }
+
+  .rules__text {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .rules__button {
+    width: 100%;
+    font-size: 11px;
   }
 }
 
