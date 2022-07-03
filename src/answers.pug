@@ -1,0 +1,27 @@
+include components/answer.pug
+include components/comments.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+    body 
+        .wrapper 
+            .main 
+                .answers
+                    .answers__body.container
+                        .answers__title Почему к нам на курс никто не пришел? 
+                        button(type="button").close
+                            img(src="@img/close.svg", alt="" draggable="false")
+                        .answers__top
+                            +answer-1 
+                            +answer-2 
+                        .answers__bot
+                            +answer-3 
+                            +comments
+
+        script(src="js/app.min.js")
