@@ -81,11 +81,11 @@
         }
     }
     &__btn{
-        width: 404px;
-        height: 64px;
+        width: 435px;
+        height: 100px;
         @include media(768){
             width: 320px;
-            height: 50px;
+            height: 70px;
         }
         @include media(375){
             width: 100%;

@@ -32,46 +32,12 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: -4px -8px 10px rgba(0, 0, 0, 0.2), 4px 8px 10px rgba(0, 0, 0, 0.34);
     position: relative;
-    border: 3px solid #fff;
     transition: 300ms ease;
+    background: url(../img/btn-bg.png) center / cover no-repeat;
     @include media(575){
         font-weight: 700;
         font-size: 22px;
         line-height: 130%;
-    }
-    &::before{
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 1px;
-        background: #fff;
-        left: 65px;
-        @include media(375){
-            left: 50px;
-        }
-    }
-    &::after{
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 1px;
-        background: #fff;
-        right: 65px;
-        @include media(375){
-            right: 50px;
-        }
-    }
-    &-orange{
-        background: #EE8132;
-        border-start-start-radius: 90px;
-        border-end-end-radius: 90px;
-        &:hover{
-            background: #F06907;
-        }
-        &:active{
-            background: #EE8132;
-        }
     }
 }
