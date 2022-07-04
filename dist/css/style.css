@@ -1260,6 +1260,125 @@ var,
 
 .comments {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments__title {
+  width: 346px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  -webkit-transform: translateY(9px);
+      -ms-transform: translateY(9px);
+          transform: translateY(9px);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comments__content {
+  background: #FFFFFF;
+  -webkit-box-shadow: -4px -8px 10px rgba(0, 0, 0, 0.2), 4px 8px 10px rgba(0, 0, 0, 0.34);
+          box-shadow: -4px -8px 10px rgba(0, 0, 0, 0.2), 4px 8px 10px rgba(0, 0, 0, 0.34);
+  border-radius: 10px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  row-gap: 15px;
+  margin-bottom: 20px;
+}
+
+.comments__green {
+  background: #10843D;
+  padding: 20px;
+}
+
+.comments__red {
+  background: #CB1818;
+  padding: 20px;
+}
+
+.comments__pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 6px;
+     -moz-column-gap: 6px;
+          column-gap: 6px;
+  margin-bottom: 10px;
+}
+
+.comments__pagination-dot {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #C8C8C8;
+  display: block;
+}
+
+.comments__pagination-dot.active {
+  background: #FEC537;
+}
+
+.comments__btn {
+  width: 404px;
+  height: 64px;
+}
+
+.comments__item,
+.comments__green,
+.comments__red {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.comments__p,
+.comments__green p,
+.comments__red p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
 }
 
 * {
@@ -1610,7 +1729,6 @@ button {
         -ms-flex-align: center;
             align-items: center;
     gap: 0 30px;
-    margin-bottom: 30px;
   }
 
   .answer__item_1 {
@@ -1624,6 +1742,7 @@ button {
 
   .answer__item_3 {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .comments {
@@ -2123,6 +2242,49 @@ button {
   .answer__item_3 .answer__item-text {
     max-width: 274px;
   }
+
+  .comments__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    width: 256px;
+    height: 45px;
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+
+  .comments__content {
+    padding: 46px 20px 20px 20px;
+  }
+
+  .comments__green {
+    padding-right: 13px;
+  }
+
+  .comments__red {
+    padding-right: 13px;
+  }
+
+  .comments__pagination {
+    margin-bottom: 30px;
+  }
+
+  .comments__btn {
+    width: 320px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .comments__p,
+  .comments__green p,
+  .comments__red p {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 130%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2355,6 +2517,10 @@ button {
   }
 
   .rules__img img {
+    width: 100%;
+  }
+
+  .comments__btn {
     width: 100%;
   }
 
